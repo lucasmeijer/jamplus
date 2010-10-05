@@ -7,5 +7,8 @@ close(MYFILE);
 system("chmod +x bin/macosxx86/*");
 system("chmod +x bin/macosxx64/*");
 system("chmod +x bin/linuxx86/*");
+system("chmod +x bin/macosxx86/lua/lua");
+system("chmod +x bin/macosxx64/lua/lua");
+system("chmod +x bin/linuxx86/lua/lua");
 
 system("zip -r builds.zip *") eq 0 or die("failed zipping up builds");
