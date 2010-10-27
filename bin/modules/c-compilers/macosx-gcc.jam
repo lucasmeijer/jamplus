@@ -173,7 +173,6 @@ rule C._SharedLibraryFromObjects_LinkFlags
 		{
 			installName = $(installName[1]) ;
 		}
-		installName = $(_t:BSR=$(installName)) ;
 		on $(TARGET) linkFlags += -dynamiclib -fPIC -install_name $(installName) ;
 	}
 }
