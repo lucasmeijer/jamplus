@@ -5,6 +5,7 @@ C.LINK			?= g++ ;
 C.RANLIB		?= ranlib ;
 
 SUFMODULE	= .dylib ;
+SUFSHAREDLIB	= .dylib ;
 SUFLINKLIBS = $(SUFLIB) $(SUFMODULE) ;
 
 actions C.Link
